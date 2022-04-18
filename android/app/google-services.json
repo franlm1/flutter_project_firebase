@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "849845828230",
+    "firebase_url": "https://flutterrealtime-e4cc9-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "flutterrealtime-e4cc9",
+    "storage_bucket": "flutterrealtime-e4cc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849845828230:android:5b9deb8547cb8473f4ef07",
+        "android_client_info": {
+          "package_name": "com.example.flutter_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849845828230-uf0em5nqgt7q42av5dhmg2stujsv9cqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlUl_UKzGgAWW7FlSLJ-gwMM675khPq-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849845828230-uf0em5nqgt7q42av5dhmg2stujsv9cqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

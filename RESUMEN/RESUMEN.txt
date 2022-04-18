@@ -1,0 +1,3 @@
+.LOG
+9:02 menucontrolador iniciarlo con runApp
+11:30 crear menu y conectado a subir archivo
