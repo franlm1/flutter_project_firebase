@@ -6,7 +6,7 @@ class LoadImagen {
   late ListResult result;
   FirebaseStorage storage = FirebaseStorage.instance;
   
-  LoadImagen(this.selectedValue, this.tipo);
+  LoadImagen(this.selectedValue, this.tipo);//--
 
   Future<List<Map<String, dynamic>>> loadImages() async {
     List<Map<String, dynamic>> files = [];

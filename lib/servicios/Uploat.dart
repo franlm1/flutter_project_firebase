@@ -1,8 +1,6 @@
-import 'dart:async';
+
 import 'dart:io';
-
 import 'package:flutter/foundation.dart';
-
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:path/path.dart' as path;
 import 'package:image_picker/image_picker.dart';

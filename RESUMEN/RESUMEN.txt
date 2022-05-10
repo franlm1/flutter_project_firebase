@@ -1,3 +1,15 @@
 .LOG
 9:02 menucontrolador iniciarlo con runApp
 11:30 crear menu y conectado a subir archivo
+proxima tarea
+
+12:41 23/04/2022 MenuStorageGaleria realizado
+proxima tarea 
+	en MenuStorage añadir si es vido o imagen
+	añadir constructor que recoja los parametros en
+	MenuStorageGaleria para recogerlos en MenuStorage;
+
+8:31 24/04/2022 en MenuStorage radio buton en video he imagen 
+
+22:23 24/04/2022 MenuStorage seleccionar video o imagen con la funcio 
+customRadio,changeIndex

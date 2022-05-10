@@ -1,13 +1,7 @@
-import 'dart:io';
-
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tuttorial_1/vista/SubirArchivos.dart';
 import 'package:video_player/video_player.dart';
-import 'package:video_thumbnail/video_thumbnail.dart';
-import '../main.dart';
 import '../menu/animation_route.dart';
 import '../servicios/LoadImages.dart';
 
@@ -16,8 +10,8 @@ class GaleriaStorage extends StatefulWidget {
   final String titulo;
   final String tipo;
 
-  const GaleriaStorage(this.tematica, this.titulo, this.tipo);
-
+  const GaleriaStorage(this.tematica, this.titulo,
+      this.tipo); //ENVIAMOS LOS DATOS CON EL CONSTRUCTOR
   @override
   State<GaleriaStorage> createState() => _GaleriaStorageState();
 }
@@ -25,17 +19,18 @@ class GaleriaStorage extends StatefulWidget {
 class _GaleriaStorageState extends State<GaleriaStorage> {
   FirebaseStorage storage = FirebaseStorage.instance;
   late String nombre = "";
-
   late VideoPlayerController controller;
   late Future<void> _initializeVideoPlayerFuture;
+
   @override
   void initState() {
     if (widget.tipo == 'SingingCharacter.video') {
+      //WIDGET.TIPO LO QUE HACE ES DARLE VALOR AL TIPO CREADO
+      //EN EL CONSTRUCTOR
       nombre = 'Videos';
     } else {
       nombre = 'Archivos';
     }
-
     super.initState();
   }
 
@@ -81,7 +76,8 @@ class _GaleriaStorageState extends State<GaleriaStorage> {
             ),
             Expanded(
               child: FutureBuilder(
-                future: LoadImagen(widget.tematica, widget.tipo).loadImages(),
+                future: LoadImagen(widget.tematica, widget.tipo)
+                    .loadImages(), //PASAMOS AL CONSTRUCTOR LOADIMAGES LOS ARTRIBUTOS
                 builder: (context,
                     AsyncSnapshot<List<Map<String, dynamic>>> snapshot) {
                   if (snapshot.connectionState == ConnectionState.done) {
@@ -119,7 +115,6 @@ class _GaleriaStorageState extends State<GaleriaStorage> {
                       },
                     );
                   }
-
                   return const Center(
                     child: CircularProgressIndicator(),
                   );
